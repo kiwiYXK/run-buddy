@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+  } 
+body {
+    /* more on this crazy alphanumerical value in a minute! */
+    /* I'm a CSS comment! */
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;  /* 第一个字体作为首选，后面两个是以防万一电脑没有首选的字体 */
+  }
+  header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+  }
+  header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline; /* 取消掉h1的块级元素，让其他字体一起排成一行 */
+  }
+  
+  header a {
+    text-decoration: none;/* 去掉了下划线 */
+    color: #fce138;
+  }
+  header nav {  /* 跑最右边去了 */
+    float: right;
+    margin: 7px 0px;
+  }
+  header nav ul li {
+    display: inline;/* 全部改成内联样式 在同一行 */
+  }
+  header nav ul li a {
+    margin: 0 30px; /* 间距拉开距离 */
+     font-weight: lighter; 
+    font-size: 22px;   /* 字体变大 */
+  }
