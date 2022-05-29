@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* 盒子的尺寸，设置为在浏览内 */
   } 
 body {
     /* more on this crazy alphanumerical value in a minute! */
@@ -35,4 +36,23 @@ body {
     margin: 0 30px; /* 间距拉开距离 */
      font-weight: lighter; 
     font-size: 22px;   /* 字体变大 */
+  }
+  footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+  }
+  footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+  }
+  footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+  }
+  footer a {
+    color: #024e76;
   }
