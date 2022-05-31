@@ -5,12 +5,12 @@
 }
 
 body {
-  /* more on this crazy alphanumerical value in a minute! */
+  
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* apply styles to <header> */
+
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
@@ -70,7 +70,7 @@ section {
   padding: 60px;
 }
 
-/* Hero Style Start */
+
 .hero {
   background-image: url('../images/hero-bg.jpg');
   height: 600px;
@@ -78,7 +78,7 @@ section {
   background-position: center;
   position: relative;
 }
-/* Hero Style End */
+
 
 .hero-form {
   border: 3px solid #024e76;
@@ -226,7 +226,7 @@ section {
   text-align: right;
 }
 
-/* REACH OUT STYLES START */
+
 .contact {
   text-align: center;
   background: #024e76;
@@ -267,4 +267,4 @@ section {
   color: #fce138;
 }
 
-/* REACH OUT STYLES END */
+
