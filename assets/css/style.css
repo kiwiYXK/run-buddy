@@ -18,6 +18,14 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 header h1 {
@@ -25,7 +33,7 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
- 
+ text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 header a {
   text-decoration: none;
@@ -47,9 +55,9 @@ header nav ul {
 
 header nav ul li a {
   padding: 10px 15px;
-  /* margin: 0 30px; */
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 footer {
@@ -91,6 +99,8 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-attachment: fixed;
+  background-position: 80%;
   }
 .hero-cta {
   width: 35%;
@@ -104,6 +114,7 @@ section {
   font-style: italic;
   font-size: 55px;
   color: #fce138;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .hero-form {
   border: 3px solid #024e76;
@@ -112,6 +123,8 @@ section {
   color: #024e76;
   width: 40%;
   margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius:  15px; ;
 }
 
 .hero-form h3 {
@@ -130,6 +143,12 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.75);
+}
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 .hero-form label {
@@ -142,6 +161,7 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 10px;
 }
 .intro p {
   line-height: 1.7;
@@ -164,6 +184,16 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+/* .step:last-child {
+  border-bottom: none;
+}
+.step:nth-child(even){
+  border-bottom:1px solid #39a6b2;
+} */
+/* combine last two step合并上面两个内容 */
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
 }
 .step h3 {
   color: #024e76;
@@ -314,6 +344,13 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.75);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+background-color: rgba(255,255,255,1);
+outline: none;
 }
 .contact-form button {
   width: 100%;
@@ -323,6 +360,7 @@ section {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
 }
 .contact-info a {
   color: #fce138;
@@ -330,11 +368,27 @@ section {
 .flex-row {
   display: flex;
 }
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
 
 @media screen and (max-width: 980px) {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
